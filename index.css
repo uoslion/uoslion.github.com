@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/hanna.css); 
+
 
 /* ------- 네이게이션 ------- */
 
@@ -96,11 +96,19 @@
 .d-md-block {
   color: black;
   font-family: 'Nanum Pen Script', cursive;
+  background-color: white;
+  border-radius: 40px;
+ 
+  
 }
 
+/* .project-font-background{
+  width: 40%;
+  background-color: white;
+  padding: 0 auto;
+} */
 
-
-
+/* -------------------------------------- */
 .subtitle {
   font-family: 'Titillium Web', sans-serif;
 }
