@@ -1,4 +1,4 @@
-
+@font-face { font-family: 'YiSunShinDotumM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff'); font-weight: normal; font-style: normal; }
 /* ------- 네이게이션 ------- */
 
 .nav{
@@ -94,7 +94,7 @@
 
 .d-md-block {
   color: black;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family:'YiSunShinDotumM';
   background-color: white;
   border-radius: 40px;
  
