@@ -1,3 +1,88 @@
-hello lion!
-22222222
-33333333
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UOSLION</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Titillium+Web" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <!-- static css -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <!-- fix -->
+    <div id="menu-bar" class="opaque nav fixed-top">
+      <div class="logo">
+        Logo
+      </div>
+      <div class="menu">
+        <ul class="nav">
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#did">Did</a></li>
+          <li><a href="#do">Do</a></li>
+          <li><a href="#member">Member</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--------->
+
+    <div class="main-image">
+      <p id="main-text" class="text-center">UOS LIKELION</p>
+    </div>
+  </div>
+  <div class="mask"></div>
+  <div class="main">
+    <div id="learn" class="submain p1">
+      <p class="subtitle text-center">What We Learn</p>
+      <div class="d-flex justify-content-center">
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/python.png" alt="">
+          <!-- <div class="lang-img"></div> -->
+          <p>Python</p>
+        </div>
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/javascript.png" alt="">
+          <!-- <div class="lang-img"></div> -->
+          <p>JavaScript</p>
+        </div>
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/html.png" alt="">
+          <!-- <div class="lang-img"></div> -->
+          <p>HTML/CSS</p>
+        </div>
+      </div>
+    </div>
+    <hr/>
+
+    <div id="did" class="submain d-flex">
+      <div>우리 프로젝트들</div>
+      <p class="subtitle">What We Did</p>
+    </div>
+    <hr/>
+
+    <div id="do" class="submain row">
+      <p class="subtitle">What We Do</p>
+      <div>해커톤 아이디어톤 MT</div>
+    </div>
+    <hr/>
+
+    <div id="member" class="submain">
+      <p>7기 운영진 소개</p>
+      <!-- 운영진사진 -->
+    </div>
+  </div>
+
+  <div class="footer align-middle text-center">
+    <p class="text-white">연락처? 페이스북 사이트? 연결</p>
+  </div>
+
+</body>
+</html>
