@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/hanna.css); 
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
 /* ------- 네이게이션 ------- */
 
@@ -26,7 +26,7 @@
 }
 
 .nav li {
-  margin-top: 8%; 
+  margin-top: 8%;
   /* flex가 제대로 먹지않아 세로 가운데 정렬하기 위해서  */
 }
 
@@ -46,7 +46,7 @@
   flex-direction: column; /* 축을 세로로 */
   /* 좌우, 위아래 가운데 정렬 */
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 
@@ -54,8 +54,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
-  
+  align-items: center;
+
   width: 100%;
 }
 
@@ -112,6 +112,7 @@
 
 .submain {
   height: 150px;
+  margin-bottom: 60px;
 }
 .header{
   font-family: 'Titillium Web', sans-serif;
@@ -163,10 +164,33 @@ need
   z-index: -1;
   filter: grayscale(100%);
 }
+
 #main-text {
-  color: white;
-  font-size: 60px;
+  font-size: 50px;
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2.5s steps(20, end),
+    blink-caret .5s step-end infinite;
 }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 400px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 
 .mask {
   margin-top: -1px;
@@ -176,6 +200,19 @@ need
   background-image: url(img/mask.png)
 }
 .footer {
-  height: 100px;
+  /* font-family: 'Nanum Gothic Coding', monospace; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
   background-color: black;
+  color: white;
+}
+.foot {
+  display:flex;
+  flex-direction:row;
+}
+.foot p{
+  margin-top: 4px;
 }
