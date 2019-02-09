@@ -10,84 +10,65 @@
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-
-  
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
   <!-- static css -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="header">
     <!-- fix -->
-    <div class="nav">
+    <div id="menu-bar" class="opaque nav fixed-top">
       <div class="logo">
         Logo
       </div>
       <div class="menu">
-        <ul>
-          <li><a href="#">learn</a></li>
-          <li><a href="#">did</a></li>
-          <li><a href="#">do</a></li>
-          <li><a href="#">member</a></li>
+        <ul class="nav">
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#did">Did</a></li>
+          <li><a href="#do">Do</a></li>
+          <li><a href="#member">Member</a></li>
         </ul>
       </div>
     </div>
     
 
-    <div>
-    lionimage
-    <img src="/img/lion.png" alt="">
-    LIKELION
+    <div class="main-image">
+      <p id="main-text" class="text-center">UOS LIKELION</p>
     </div>
   </div>
-
-  <div class="main container">
-    <hr/>
-
-    <div class="submain row">
-      <p class="subtitle">What We Learn</p>
-      <div class="row">
-        <div class="language-img">
-          <img src="/img/python.png" alt="">
+  <div class="mask"></div>
+  <div class="main">
+    <div id="learn" class="submain p1">
+      <p class="subtitle text-center">What We Learn</p>
+      <div class="d-flex justify-content-center">
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/python.png" alt="">
+          <!-- <div class="lang-img"></div> -->
           <p>Python</p>
         </div>
-        <div class="language-img">
-          <img src="/img/js.png" alt="">
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/javascript.png" alt="">
+          <!-- <div class="lang-img"></div> -->
           <p>JavaScript</p>
         </div>
-        <div class="language-img">
-          <img src="/img/html_css.png" alt="">
+        <div class="img-container text-center">
+          <img class="lang-img" src="./img/html.png" alt="">
+          <!-- <div class="lang-img"></div> -->
           <p>HTML/CSS</p>
         </div>
       </div>
     </div>
     <hr/>
-<!-- @@@@@@@@@@@@@@ 내가 작업할 공간 @@@@@@@@@@@@@@ -->
 
-    <!-- <div class="did">
-      <div class="submain">
-        <div class="subtitle">What We Did</div>
-      </div>
-      <div class="project-list">
-        <div class="project-first-line">
-            <div class="project1">
-              <div class="project-content">랜디</div> 
-            </div>
-            <div class="project2">축제홍보페이지</div>
-        </div>
-        <div class="project-second-line">
-            <div class="project3">오늘 학식</div>
-            <div class="project4">uos plan</div>
-        </div>
-        
-      </div>
-    </div> -->
-    
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="did" class="submain d-flex">
+      <p class="subtitle">What We Did</p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -151,6 +132,16 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+
+
+
+    </div>
+    <hr/>
+
+    
+    
+    
    
     
 
@@ -163,18 +154,19 @@
 <!-- @@@@@@@@@@@@@@ 내가 작업할 공간 @@@@@@@@@@@@@@ -->
 <hr/>
     <div class="submain row">
-      <p class="subtitle">What We Do</p>
+<div id="do" class="submain row">  
+    <p class="subtitle">What We Do</p>
       <div>해커톤 아이디어톤 MT</div>
     </div>
     <hr/>
 
-    <div class="submain">
-      7기 운영진 소개
+    <div id="member" class="submain">
+      <p>7기 운영진 소개</p>
       <!-- 운영진사진 -->
     </div>
   </div>
 
-  <div class="submain text-center bg-dark">
+  <div class="footer align-middle text-center">
     <p class="text-white">연락처? 페이스북 사이트? 연결</p>
   </div>
 
