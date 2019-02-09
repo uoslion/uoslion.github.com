@@ -1,19 +1,17 @@
-var main=['UOS ','LIKELION']
-console.log('hi')
-$(main).hide().appendTo('#main-text').each(function(i) {
-    $(this).delay(1000 * i).fadeIn();
-});
-
 $(function () {
-    var header = $('#menu-bar');
+
     $(window).scroll(function () {
-
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 300) {
-            header.removeClass('opaque').addClass('fixed-top').fadeIn();
-        } else {
-            header.removeClass('navbar-fixed-top').fadeOut().addClass('opaque');
+        var offset = $(window).scrollTop(),opacity=0;
+        var header = $('#menu-bar');
+        var fadeStart=300,fadeUntil=700;
+        if( offset<=fadeStart ){
+            opacity=0;
+            header.addClass('opaque')
+            header.css('opacity',opacity);
+        }else if( offset<=fadeUntil ){
+            header.removeClass('opaque')
+            opacity=(offset-fadeStart)/(fadeUntil-fadeStart);
+            header.css('opacity',opacity);
         }
     });
 });

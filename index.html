@@ -8,7 +8,6 @@
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Titillium+Web|Nanum+Pen+Script" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> -->
-
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -18,10 +17,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-
+  <script src="./jquery-3.3.1.min.js"></script>
   <script src="./index.js"></script>
+  <!-- ionicons -->
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
   <!-- static css -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -41,7 +40,7 @@
         </ul>
       </div>
     </div>
-    
+
 
     <div class="main-image">
       <p id="main-text" class="text-center">UOS LIKELION</p>
@@ -69,7 +68,6 @@
         </div>
       </div>
     </div>
-    <hr/>
 
     <div id="did" class="submain">
       <p class="subtitle text-center">What We Did</p>
@@ -82,7 +80,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -112,59 +110,67 @@
           <div class="carousel-item">
               <img src="images/uos_info.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1>uos-info</h1>
-                  <p>내가 졸업요건을 맞춘걸까?</p>
+                  <h1>lan-diary</h1>
+                  <p>추억으로 돌아가서 교환 일기장을 써보자</p>
               </div>
-          </div>
-          <div class="carousel-item">
-              <img src="images/uos_plan.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/uos_assistant.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1>uos-plan</h1>
-                  <p>학업계획서를 보다 쉽고 빠르게!</p>
+                  <h1>오늘 학식</h1>
+                  <p>오늘의 메뉴를 알려주는 서비스</p>
               </div>
-          </div>
-          <div class="carousel-item">
-              <img src="images/yanawa.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/uos_festival.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1>yanawa</h1>
-                  <p>Korea time 은 이제 그만!</p>
+                  <h1>2018 축제 홍보사이트</h1>
+                  <p>서울시립대의 축제를 더 재밌게 즐기자!</p>
               </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/uos_info.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>uos-info</h1>
+                    <p>내가 졸업요건을 맞춘걸까?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/uos_plan.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>uos-plan</h1>
+                    <p>학업계획서를 보다 쉽고 빠르게!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/yanawa.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>yanawa</h1>
+                    <p>Korea time 은 이제 그만!</p>
+                </div>
+            </div>
+
           </div>
-          
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-
-
     </div>
 
-    </div>
-    <hr/>
-
-    
-    
-    
-   
-    
 
 
 
 
 
-
-
-
-<hr/>
-    <div class="submain">
-<div id="do" class="submain">  
-    <p class="subtitle">What We Do</p>
+    <br/><br/>
+    <div id="do" class="submain">
+      <p class="subtitle">What We Do</p>
       <div>해커톤 아이디어톤 MT</div>
     </div>
     <hr/>
@@ -173,11 +179,17 @@
       <p>7기 운영진 소개</p>
       <!-- 운영진사진 -->
     </div>
-  </div>
 
-  <div class="footer align-middle text-center">
-    <p class="text-white">연락처? 페이스북 사이트? 연결</p>
-  </div>
+    <div class="footer">
+      <div class="foot">
+        <ion-icon name="logo-facebook" size="large"></ion-icon>
+        <p>facebook</p>
+      </div>
+      <div class="foot">
+        <ion-icon name="phone-portrait" size="large"></ion-icon>
+        <p>call</p>
+      </div>
+    </div>
 
 </body>
 </html>
