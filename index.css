@@ -101,11 +101,7 @@
   
 }
 
-/* .project-font-background{
-  width: 40%;
-  background-color: white;
-  padding: 0 auto;
-} */
+
 
 /* -------------------------------------- */
 .subtitle {
@@ -118,7 +114,7 @@
 }
 
 .submain {
-  height: 150px;
+  height: 800px;
   margin-bottom: 60px;
 }
 .header{
@@ -215,6 +211,7 @@ need
   height: 150px;
   background-color: black;
   color: white;
+  margin-top: 15%;
 }
 .foot {
   display:flex;
@@ -222,4 +219,54 @@ need
 }
 .foot p{
   margin-top: 4px;
+}
+
+
+/* ------- 운영진 소개 ------- */
+
+.manager-image{
+  width: 70%;
+  border-radius: 50%;
+
+  
+}
+
+.picture{
+  width: 240px;
+  /* margin: 0 auto; */
+  height: 192px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.member-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.personal-member{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'YiSunShinDotumM';
+}
+
+#member {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.member-title{
+  font-family: 'YiSunShinDotumM';
+}
+
+.name{
+  font-size: 25px;
 }
