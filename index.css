@@ -1,4 +1,4 @@
-
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css); 
 
 /* ------- 네이게이션 ------- */
 
@@ -95,6 +95,7 @@
 
 .d-md-block {
   color: black;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 
