@@ -49,12 +49,6 @@
   align-items: center;  
 }
 
-.submain{
-  display: flex;
-  
-  
-  
-}
 
 .project-list{
   display: flex;
@@ -92,15 +86,11 @@
   font-size: 3em;
 }
 
-/* .w-100 {
-  background-size: cover; 
-} */
 
-/* .d-md-block{
-  font-size: 300px;
-} */
 .w-100 {
   opacity: 0.5;
+  width: 100%;
+  height: 500px;
 }
 
 .d-md-block {
