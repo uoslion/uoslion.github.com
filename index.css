@@ -1,0 +1,124 @@
+
+
+/* ------- 네이게이션 ------- */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  height: 3em;
+}
+
+.nav .menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav li {
+  margin-top: 8%; 
+  /* flex가 제대로 먹지않아 세로 가운데 정렬하기 위해서  */
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1em;
+
+}
+
+/* --------------------------- */
+
+/* ------- what we did ------- */
+
+.did {
+  display: flex;
+  flex-direction: column; /* 축을 세로로 */
+  /* 좌우, 위아래 가운데 정렬 */
+  justify-content: center;
+  align-items: center;  
+}
+
+.submain{
+  display: flex;
+  
+  
+  
+}
+
+.project-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  
+  width: 100%;
+}
+
+.project-first-line, .project-second-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project1, .project2, .project3, .project4 {
+  border: 1px solid black;
+  width: 40%;
+  padding: 10% 5%;
+}
+
+.project1 {
+  position: relative;
+  background-image: url(images/landi_image.png);
+  /* height: 100vh; */
+  background-size: contain ;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.project-content {
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* .w-100 {
+  background-size: cover; 
+} */
+
+/* .d-md-block{
+  font-size: 300px;
+} */
+.w-100 {
+  opacity: 0.5;
+}
+
+.d-md-block {
+  color: black;
+}
+
+
+
+
+.subtitle {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.language-img {
+  height: 100px;
+  width: 100px;
+}
+
+.submain {
+  height: 150px;
+}
