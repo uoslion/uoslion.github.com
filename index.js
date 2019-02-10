@@ -1,5 +1,4 @@
 $(function () {
-
     $(window).scroll(function () {
         var offset = $(window).scrollTop(),opacity=0;
         var header = $('#menu-bar');
