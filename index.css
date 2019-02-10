@@ -233,6 +233,7 @@ need
   display:flex;
   flex-direction: row;
   color: white;
+  margin-right: 4%;
 }
 
 .foot p{
@@ -243,6 +244,15 @@ need
   width: 4%;
 }
 
+.facebook-container, .youtube-container{
+  display: flex;
+  color: white;
+  /* 마우스 올렸을 때 바뀌는 거 해결하기 */
+}
+
+ion-icon {
+  margin-right: 5px;
+}
 
 /* ------- 운영진 소개 ------- */
 
