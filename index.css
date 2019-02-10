@@ -207,16 +207,13 @@
   font-family:'YiSunShinDotumM';
   background-color: white;
   border-radius: 40px;
+  border: 1px solid white;
+  padding: 0px;
+  margin-bottom: 3%;
 
 
 }
 
-/* ------------ 운영진 소개----------- */
-.member-title{
-  margin-top: 200px;
-}
-
-/* -------------------------------------- */
 .subtitle {
   font-family: 'Titillium Web', sans-serif;
 }
@@ -258,20 +255,28 @@ need
 .footer {
   /* font-family: 'Nanum Gothic Coding', monospace; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 150px;
   background-color: black;
   color: white;
   margin-top: 15%;
+  width: 100%;
 }
-.foot {
+
+.foot{
   display:flex;
-  flex-direction:row;
+  flex-direction: row;
+  color: white;
 }
+
 .foot p{
   margin-top: 4px;
+}
+
+.footer-margin {
+  width: 4%;
 }
 
 
@@ -322,4 +327,8 @@ need
 
 .name{
   font-size: 25px;
+}
+
+.member-title{
+  margin-top: 200px;
 }
