@@ -12,6 +12,7 @@
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center bottom;
+  background-color: #2A2A2A;
   z-index: -1;
   filter: grayscale(100%);
 }
