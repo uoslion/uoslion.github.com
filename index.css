@@ -252,6 +252,21 @@ body{
 .did-margin{
   height: 1px;
 }
+/* 좌우 슬라이드 화살표가 잘 안보여서 검은색으로 수정 */
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:black;
+}
 /* --------------------------- */
 .subtitle {
   font-family: 'Titillium Web', sans-serif;
