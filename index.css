@@ -154,7 +154,12 @@ body{
   background: linear-gradient(black,white);
 }
 
-
+.learn-subject-container{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
 
 
 /* ------- what we did ------- */
@@ -299,6 +304,7 @@ need
   display: flex;
   color: white;
   text-decoration: none;
+  
 }
 
 .facebook-container:hover, .youtube-container:hover{
