@@ -6,7 +6,6 @@ body{
   margin: o auto;
 }
 
-
 .main-image{
   display: flex;
   flex-direction: column;
@@ -20,6 +19,10 @@ body{
   background-color: #2A2A2A;
   z-index: -1;
   filter: grayscale(100%);
+}
+
+#lion_img {
+  cursor: pointer;
 }
 
 @media all and (min-width: 600px){
@@ -137,7 +140,7 @@ body{
 }
 #learn .subtitle{
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .lang-img{
   /* margin-left: 10px; */
@@ -224,6 +227,9 @@ body{
   background-color: black;
 }
 
+.did-margin{
+  height: 1px;
+}
 /* --------------------------- */
 .subtitle {
   font-family: 'Titillium Web', sans-serif;
@@ -342,29 +348,11 @@ ion-icon {
 }
 
 .member-title{
-  font-family: 'YiSunShinDotumM';
+  font-family: 'YiSunShinDotumM'; 
+  margin-top: 211px;
 }
 
 .name{
   font-size: 25px;
 }
 
-.member-title{
-  margin-top: 200px;
-}
-
-/* 
-.header{
-  height: 20%;
-}
-
-.mask{
-  height: 10%;
-}
-.main{
-  height: 60%;
-}
-
-.footer{
-  height: 10%;
-} */
