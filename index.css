@@ -298,8 +298,13 @@ need
 .facebook-container, .youtube-container{
   display: flex;
   color: white;
-  /* 마우스 올렸을 때 바뀌는 거 해결하기 */
+  text-decoration: none;
 }
+
+.facebook-container:hover, .youtube-container:hover{
+  color :#E3C67D;
+}
+
 
 ion-icon {
   margin-right: 5px;
