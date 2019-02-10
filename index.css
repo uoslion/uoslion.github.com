@@ -234,10 +234,7 @@ body{
   width: 100px;
 }
 
-.submain {
-  height: 800px;
-  /* margin-bottom: 60px; */
-}
+
 .header{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -260,19 +257,20 @@ need
 
 .submain {
   font-family: 'Nanum Gothic Coding', monospace;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .footer {
   /* position: absolute;
   bottom: 0; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
   background-color: black;
   color: white;
-  margin-top: 15%;
+  margin-top: 6%;
   width: 100%;
 }
 
@@ -328,7 +326,7 @@ ion-icon {
 
 .personal-member{
   /* width: 25%; */
-  width: 290px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,3 +352,19 @@ ion-icon {
 .member-title{
   margin-top: 200px;
 }
+
+/* 
+.header{
+  height: 20%;
+}
+
+.mask{
+  height: 10%;
+}
+.main{
+  height: 60%;
+}
+
+.footer{
+  height: 10%;
+} */
