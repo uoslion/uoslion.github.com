@@ -9,14 +9,18 @@ $(function () {
             header.addClass('opaque')
             header.css('opacity',opacity);
         }else if( offset<=fadeUntil ){
+            var op=(offset-fadeStart)/(fadeUntil-fadeStart);
             header.removeClass('opaque')
-            opacity=(offset-fadeStart)/(fadeUntil-fadeStart);
+            opacity=op>1?1:op;
             header.css('opacity',opacity);
         }
     });
 });
 
 $(document).ready(function(){
+    $('#lion_img').on("click",function(){
+      $('html, body').animate({scrollTop:0}, 'slow');
+    });
     $("body").hide(0).delay(100).fadeIn(2000)
 
     $('a[href*="#"]').on('click', function (e) {

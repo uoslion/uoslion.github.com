@@ -10,10 +10,10 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.jpg">
 
   <!-- jquery -->
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -27,20 +27,16 @@
 <body>
   <div class="header">
     <!-- fix -->
-    <div id="menu-bar" class="opaque nav fixed-top">
-      <div class="logo">
-        Logo
-      </div>
-      <div class="menu">
-        <ul class="nav">
-          <li><a href="#learn">Learn</a></li>
-          <li><a href="#did">Did</a></li>
-          <li><a href="#do">Do</a></li>
-          <li><a href="#member">Member</a></li>
-        </ul>
-      </div>
+    <div id="menu-bar" class="opaque menu-bar fixed-top">
+        <img id="lion_img" src="./images/uoslion_logo.png">
+        <div class="menu-container">
+          <ul class="menus">
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#did">Did</a></li>
+            <li><a href="#member">Member</a></li>
+          </ul>
+        </div>
     </div>
-
 
     <div class="main-image">
       <p id="main-text" class="text-center">UOS LIKELION</p>
@@ -147,7 +143,7 @@
     <br/><br/>
 
 
-    <div id="member" class="submain mt-5">
+    <div id="member" class="submain">
       <h1 class="member-title text-center">7기 운영진 소개</h1>
       <div class="member-container">
         <div class="personal-member">
