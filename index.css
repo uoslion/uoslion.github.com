@@ -107,6 +107,23 @@ body{
     animation:
       typing 2.5s steps(15, end),
       blink-caret .5s step-end infinite;
+    }
+
+    /* did text 크기 조절 */
+    .d-md-block{
+      font-size: 0.5em;
+      padding: 1;
+    }
+    .d-md-block h1{
+      font-size: 20px;
+    }
+    /* footer 전화번호 줄바꿈 해결 */
+    .foot p{
+      margin-top: 4px;
+      font-size: 14px;
+    }
+    
+
   }
   /* The typing effect */
   @keyframes typing {
