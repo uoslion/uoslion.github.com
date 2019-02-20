@@ -1,5 +1,12 @@
 @font-face { font-family: 'YiSunShinDotumM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff'); font-weight: normal; font-style: normal; }
-/* ------- 네이게이션 ------- */
+/* ------- 지원하기 버튼 ------- */
+
+.submit_button_wap{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+}
 
 /* -------- main ------ */
 body{
@@ -7,11 +14,12 @@ body{
 }
 
 .main-image{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;  */
   width: 100%;
-  height: 700px;
+  
   background-image:    url(images/lion.jpg);
   background-size:     cover;
   background-repeat:   no-repeat;
@@ -20,12 +28,33 @@ body{
   z-index: -1;
   filter: grayscale(100%);
 }
+.main-image-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 60%;
+  
+}
+/* .recruiting_video{
+  width: 60%;
+  
+} */
 
 #lion_img {
   cursor: pointer;
 }
 
 @media all and (min-width: 600px){
+  .recruiting_video{
+    /* width: 60%; */
+    width: 60%;
+    height: 69.45%;
+  }
+  .main-image{
+    height: 1200px;
+  }
+  
   #lion_img{
     width: 60px;
   }
@@ -53,6 +82,7 @@ body{
   }
   .menus li a{
     color: white;
+    font-size: 27px;
     text-decoration: none;
   }
 
@@ -77,6 +107,16 @@ body{
 }
 
 @media all and (max-width: 600px){
+  .recruiting_video{
+    /* width: 60%; */
+    width: 100%;
+    height: 49.45%;
+  }
+
+  .main-image{
+    height: 700px;
+  }
+
   #lion_img{
     width: 60px;
     margin: 0 auto;

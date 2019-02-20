@@ -31,3 +31,18 @@ $(document).ready(function(){
     });
 
 });
+
+function iframe0(){
+    var iframeW = $('iframe').width();
+    console.log("###")
+    $('iframe').css({
+      height: iframeW * 0.5622
+
+    })
+  }
+  iframe0();
+
+  $(window).resize(function(){
+    iframe0();
+    
+  });
