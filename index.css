@@ -19,7 +19,7 @@ body{
   justify-content: center;
   align-items: center;  */
   width: 100%;
-  
+
   background-image:    url(images/lion.jpg);
   background-size:     cover;
   background-repeat:   no-repeat;
@@ -32,13 +32,12 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 60%;
-  
 }
 /* .recruiting_video{
   width: 60%;
-  
+
 } */
 
 #lion_img {
@@ -54,7 +53,7 @@ body{
   .main-image{
     height: 1200px;
   }
-  
+
   #lion_img{
     width: 60px;
   }
@@ -162,7 +161,7 @@ body{
       margin-top: 4px;
       font-size: 14px;
     }
-    
+
 
   }
   /* The typing effect */
@@ -181,11 +180,12 @@ body{
   50% { border-color: orange }
 }
 .mask {
-  margin-top: -1px;
-  margin-bottom: -1px;
+  /* margin-top: -1px; */
+  /* margin-bottom: -1px; */
   width: 100%;
   height: 80px;
-  background-image: url(images/mask.png)
+  /* background-image: url(images/mask.png) */
+  background: linear-gradient(#2A2A2A,black);
 }
 /* ------- what we learn ------- */
 
@@ -342,7 +342,7 @@ need
 .footer {
   /* position: absolute;
   bottom: 0; */
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,10 +372,11 @@ need
   display: flex;
   color: white;
   text-decoration: none;
-  
+
 }
 
 .facebook-container:hover, .youtube-container:hover{
+  text-decoration: underline;
   color :#E3C67D;
 }
 
@@ -427,11 +428,10 @@ ion-icon {
 }
 
 .member-title{
-  font-family: 'YiSunShinDotumM'; 
+  font-family: 'YiSunShinDotumM';
   margin-top: 211px;
 }
 
 .name{
   font-size: 25px;
 }
-
